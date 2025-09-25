@@ -1,4 +1,4 @@
-package pastexam.codewriting;
+// package pastexam.codewriting;
 
 import java.util.Scanner;
 
@@ -20,6 +20,22 @@ public class Q07 {
 		System.out.print("Please enter a positive integer: ");
 		int n = in.nextInt();
 		in.close();
+
+		boolean[] factors = new boolean[n];
+
+		for (int i = 1; i <= n; i++){
+			if (n % i == 0){
+				factors[i - 1] = true;
+			}
+		}
+
+		for (int i = 0; i < factors.length; i++){
+			if (factors[i] == true){
+				System.out.print(i + 1 + " ");
+			}
+		}
+
+
 		
 	}
 }

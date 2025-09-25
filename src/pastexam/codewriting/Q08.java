@@ -1,4 +1,4 @@
-package pastexam.codewriting;
+// package pastexam.codewriting;
 
 import java.util.Scanner;
 
@@ -32,7 +32,24 @@ public class Q08 {
 		//any size! Add and subtract some rows
 		//and columns to make sure your solution
 		//works properly.
-		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
+		int[][] data = {
+			{1, 2, 3},
+			{4, 5, 6}
+		}; 
+
+		int[][] dataTransposed = new int[data[0].length][data.length];
+
+		for (int i = 0; i < data.length; i++){
+			for (int j = 0; j < data[0].length; j++){
+				dataTransposed[j][i] = data[i][j];
+			}
+		}
 		
+		for (int[] i : dataTransposed){
+			for (int j : i){
+				System.out.print(j + " ");
+			}
+			System.out.println("");
+		}
 	}
 }

@@ -1,4 +1,4 @@
-package pastexam.codewriting;
+// package pastexam.codewriting;
 
 import java.util.Scanner;
 
@@ -17,6 +17,16 @@ public class Q02 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
+		double width = 1;
+		double height = 1;
+
+		while (width * height != 0){
+			System.out.println("Enter a width: ");
+			width = in.nextDouble();
+			System.out.println("Enter a height: ");
+			height = in.nextDouble();
+			System.out.println("The area is " + width * height + ".");
+		}
+
 	}
 }
